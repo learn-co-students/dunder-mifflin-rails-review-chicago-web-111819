@@ -1,0 +1,5 @@
+dog index
+
+<% @dogs.each do |pup| %>
+    <p><%=link_to pup.name, dog_path(pup) %></p>
+<% end %>

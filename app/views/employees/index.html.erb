@@ -1,0 +1,5 @@
+employee index
+
+<% @employees.each do |emp| %>
+    <p><%=link_to emp.first_name + " " + emp.last_name, employee_path(emp) %></p>
+<% end %>

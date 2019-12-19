@@ -1,0 +1,13 @@
+employee one show <br>
+<%=image_tag "#{@emp.img_url}"%>
+<h1><%= @emp.first_name + " " + @emp.last_name %></h1>
+<h2>AKA: <%= @emp.alias %></h2>
+<ul>
+    <li>Title: <%= @emp.title %></li><br>
+    <li>Office: <%= @emp.office %></li><br>
+    <li>Dog: <%= link_to "#{@emp.dog.name}", dog_path(@emp.dog) %></li>
+</ul>
+
+<p><%= link_to "Employees", employees_path %></p>
+<p><%= link_to "Dogs", dogs_path %></p>
+<p><%= link_to "Edit this profile", edit_employee_path %>
